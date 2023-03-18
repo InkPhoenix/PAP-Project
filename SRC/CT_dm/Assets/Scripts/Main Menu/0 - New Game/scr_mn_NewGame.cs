@@ -334,25 +334,25 @@ public class scr_mn_NewGame : MonoBehaviour
     public void easy()
     {
         Debug.Log("scn_Game loaded in 'Easy' Difficulty");
-        StartCoroutine(switch_scenes("scn_Game"));
+        StartCoroutine(switch_scenes("scn_debug_Game"));
     }
 
     public void normal()
     {
         Debug.Log("scn_Game loaded in 'Normal' Difficulty");
-        StartCoroutine(switch_scenes("scn_Game"));
+        StartCoroutine(switch_scenes("scn_debug_Game"));
     }
 
     public void hard()
     {
         Debug.Log("scn_Game loaded in 'Hard' Difficulty");
-        StartCoroutine(switch_scenes("scn_Game"));
+        StartCoroutine(switch_scenes("scn_debug_Game"));
     }
 
     public void extreme()
     {
         Debug.Log("scn_Game loaded in 'Extreme' Difficulty");
-        StartCoroutine(switch_scenes("scn_Game"));
+        StartCoroutine(switch_scenes("scn_debug_Game"));
     }
 
     private IEnumerator switch_scenes(string scene_n)
