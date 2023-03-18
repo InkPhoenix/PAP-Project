@@ -88,9 +88,9 @@ public class scr_mn_root : MonoBehaviour
     public void nav_trigger_mouse7() { buttonAnimation(5); }   //btn_Quit
 
     //play SFX (for mouse click)
-    public void sfx_play_menu_1() { menu_sfx_1.Play(); }
-    public void sfx_play_menu_2() { menu_sfx_2.Play(); }
-    public void sfx_play_menu_3() { menu_sfx_3.Play(); }
+    public void play_sfx_menu_1() { menu_sfx_1.Play(); }
+    public void play_sfx_menu_2() { menu_sfx_2.Play(); }
+    public void play_sfx_menu_3() { menu_sfx_3.Play(); }
 
     public void nav_trigger(InputAction.CallbackContext context)
     {
