@@ -123,7 +123,7 @@ public class scr_player_controller : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"is moving?: {is_movement_pressed} || movement: {movement} || grounded gravity {grounded_gravity} || is jumping? = {is_jumping} || jumps: {jumps} || controller.isGrounded: {controller.isGrounded}");
+        //Debug.Log($"is moving?: {is_movement_pressed} || movement: {movement} || grounded gravity {grounded_gravity} || is jumping? = {is_jumping} || jumps: {jumps} || controller.isGrounded: {controller.isGrounded}");
         playerRotation();
 
         modified_movement.x = movement.x;
