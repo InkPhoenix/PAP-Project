@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Debug/scn_debug_Game.unity
     guid: 38cc3df95cce0d34f8867c35c9596ed5
+  - enabled: 1
+    path: Assets/Scenes/Debug/scn_debug_GameplayTest.unity
+    guid: 6e615dfe86d0c5442b675e0b818a83b0
   m_configObjects: {}
