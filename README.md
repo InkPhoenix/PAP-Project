@@ -4,7 +4,7 @@ A small 3D game demo made in Unity for my course's final evaluation (PAP)
 Notes:
 ```
 -use the '\' key to open up console, type "help" to get a list of commands
--navigate menus with WASD
+-navigate menus with WASD | move player with WASD and Spacebar to jump.
 ```
 
 ```
