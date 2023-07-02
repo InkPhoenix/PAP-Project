@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Debug/scn_debug_GameplayTest.unity
     guid: 6e615dfe86d0c5442b675e0b818a83b0
+  - enabled: 1
+    path: Assets/Scenes/Debug/scn_debug_EnemyTest.unity
+    guid: 829a1d81ce2b7bc46b8051dec2e646ec
+  - enabled: 1
+    path: Assets/Scenes/Game/scn_game.unity
+    guid: 4278cf5edc5cd8a46a145e0d2fb95511
   m_configObjects: {}

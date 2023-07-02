@@ -126,25 +126,21 @@ public class scr_mn_NewGame : MonoBehaviour
             switch (selected_btn)
             {
                 case 0: //btn_easy
-                    globalVars.game_type = "easy";
                     menu_sfx_3.Play(); //play SFX
                     easy();
                 break;
 
                 case 1: //btn_normal
-                    globalVars.game_type = "normal";
                     menu_sfx_3.Play(); //play SFX
                     normal();
                 break;
 
                 case 2: //btn_hard
-                    globalVars.game_type = "hard";
                     menu_sfx_3.Play(); //play SFX
                     hard();
                 break;
 
                 case 3: //btn_extreme
-                    globalVars.game_type = "extreme";
                     menu_sfx_3.Play(); //play SFX
                     extreme();
                 break;
@@ -333,26 +329,30 @@ public class scr_mn_NewGame : MonoBehaviour
 
     public void easy()
     {
+        globalVars.difficulty = "easy";
         Debug.Log("scn_Game loaded in 'Easy' Difficulty");
-        StartCoroutine(switch_scenes("scn_debug_Game"));
+        StartCoroutine(switch_scenes("scn_Game"));
     }
 
     public void normal()
     {
+        globalVars.difficulty = "normal";
         Debug.Log("scn_Game loaded in 'Normal' Difficulty");
-        StartCoroutine(switch_scenes("scn_debug_Game"));
+        StartCoroutine(switch_scenes("scn_Game"));
     }
 
     public void hard()
     {
+        globalVars.difficulty = "hard";
         Debug.Log("scn_Game loaded in 'Hard' Difficulty");
-        StartCoroutine(switch_scenes("scn_debug_Game"));
+        StartCoroutine(switch_scenes("scn_Game"));
     }
 
     public void extreme()
     {
+        globalVars.difficulty = "extreme";
         Debug.Log("scn_Game loaded in 'Extreme' Difficulty");
-        StartCoroutine(switch_scenes("scn_debug_Game"));
+        StartCoroutine(switch_scenes("scn_Game"));
     }
 
     private IEnumerator switch_scenes(string scene_n)
@@ -362,6 +362,8 @@ public class scr_mn_NewGame : MonoBehaviour
         scr_fade_levelLoader.make_fade_black_on_startup = true; //make the fade be of alpha 1 on startup of next scene
         yield return obj_crossfade.GetComponent<scr_fade_levelLoader>().sceneSwitchFadeIn(0.5f, false, Ease.InCubic);
         yield return new WaitForSeconds(3.0f);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(scene_n);
     }
 }

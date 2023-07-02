@@ -28,7 +28,7 @@ namespace DevCon.Commands
             foreach (GameObject obj in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
             {
                 if (obj.hideFlags == HideFlags.NotEditable || obj.hideFlags == HideFlags.HideAndDontSave) { continue; }
-                if (!EditorUtility.IsPersistent(obj.transform.root.gameObject)) { continue; }
+                //if (!EditorUtility.IsPersistent(obj.transform.root.gameObject)) { continue; }
                 objectsInScene.Add(obj);
 
                 loadedObjCountTotal++;
