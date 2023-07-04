@@ -16,6 +16,11 @@ public class scr_intro : MonoBehaviour
         logo_alpha.DOFade(0, fade_time).OnStepComplete(changeScene);
     }
 
+    private void Awake()
+    {
+        for (int i = 1; i < Display.displays.Length; i++) { Display.displays[i].Activate(); } //DEBUG
+    }
+
     public void Start()
     {
         //reference an object that includes the level loader fade script

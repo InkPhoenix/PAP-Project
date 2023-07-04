@@ -688,7 +688,7 @@ public class scr_mn_LoadGame : MonoBehaviour
 
         ///Save
         List<Save_Header> header = new List<Save_Header>();
-        header.Add(new Save_Header("OSE", "1", header_test.ToString("dd-MM-yyyy HH:mm:ss"))); //create the header list
+        header.Add(new Save_Header("STM", "1", header_test.ToString("dd-MM-yyyy HH:mm:ss"))); //create the header list
         List<scr_save_data> game_data = new List<scr_save_data>();
         game_data.Add(new scr_save_data(globalVars.game_type, globalVars.difficulty.ToUpper(), globalVars.playtime.ToString("d':'hh':'mm':'ss'.'fff"), globalVars.is_playtime_counting)); //create the list of all variables and populate it
 
@@ -825,7 +825,7 @@ public class scr_mn_LoadGame : MonoBehaviour
             if (header_is_null == true) { Debug.Log($"save '{valid_filenames[z]}' is invalid (reason: header | header missing)"); }
             else
             {
-                if (header[0].GameID == "OSE") //game ID is valid
+                if (header[0].GameID == "STM") //game ID is valid
                 {
                     Debug.Log($"save '{valid_filenames[z]}' is valid");
                     valid_saves.Add(valid_filenames[z]);
